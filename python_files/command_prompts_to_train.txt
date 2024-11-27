@@ -1,0 +1,24 @@
+Command prompt lines to run
+
+Resnet:
+
+python python_files/main.py --epochs 40 --batch-size 64 --model_name resnet50 --experiment resnet_results64
+
+python python_files/main.py --epochs 40 --batch-size 32 --model_name resnet50 --experiment resnet_results32
+
+ConvNext:
+
+python python_files/main.py --epochs 30 --batch-size 64 --model_name convnext --experiment convnext_results64
+
+python python_files/main.py --epochs 30 --batch-size 64 --model_name convnext --experiment convnext_results64
+
+
+Evaluate:
+
+Resnet:
+
+python python_files/evaluate.py --model_name resnet50 --model resnet_results32/model_best.pth --outfile resnet_results32/kaggle.csv
+
+Convnext:
+
+python python_files/evaluate.py --model_name convnext --model convnext_results32/model_best.pth --outfile convnext_results32/kaggle.csv
