@@ -3,6 +3,9 @@
 This repository contains an implementation of a fine-tuned ResNet50 model to classify ImageNet-Sketch images into 500 categories. The project demonstrates effective strategies for adapting pre-trained convolutional neural networks to a domain-specific dataset.
 
 The original dataset can be found in this [GitHub repository](https://github.com/HaohanWang/ImageNet-Sketch).
+This dataset is composed of 50000 images, 50 images for each of the 1000 ImageNet classes.
+
+Before training, please split the data into 3 folders: train, validation and test set, denoted by *train_set*, *val_set* and *test_set*
 
 ---
 
@@ -10,7 +13,7 @@ The original dataset can be found in this [GitHub repository](https://github.com
 
 ### **1. model.py**
 - Implements the `ResNet50Classifier`, which:
-  - Adds fully connected layers for fine-tuning on the 500 categories of ImageNet-Sketch.
+  - Adds fully connected layers for fine-tuning on the 1000 categories of ImageNet-Sketch.
   - Gradually unfreezes deeper layers during training for enhanced feature learning.
   - Uses dropout and additional dense layers for better generalization.
 
