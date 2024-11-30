@@ -5,7 +5,7 @@ This repository contains an implementation of a fine-tuned ResNet50 model to cla
 The original dataset can be found in this [GitHub repository](https://github.com/HaohanWang/ImageNet-Sketch).
 This dataset is composed of 50000 images, 50 images for each of the 1000 ImageNet classes.
 
-Before training, organize the dataset into three subfolders within a main directory named datasets. These subfolders should represent the training set (*train_set*), validation set (*val_set*), and test set (*test_set*), respectively. (*__* expected name to run the code)
+Before training, organize the dataset into three subfolders within a main directory named datasets. These subfolders should represent the training set (*train_set*), validation set (*val_set*), and test set (*test_set*), respectively. ( *data_set* expected name to run the code)
 
 ---
 
